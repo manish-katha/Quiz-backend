@@ -10,7 +10,7 @@ export const newTask = async (req, res, next) => {
       questions,
       user: req.user._id,
     });
-
+    console.log("working");
     res.status(201).json({
       success: true,
       message: "Quiz created successfully",
