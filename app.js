@@ -20,8 +20,8 @@ app.use(
   })
 );
 
-console.log(process.env.PORT);
-console.log(process.env.FRONTEND_URL);
+console.log("this is port",process.env.PORT);
+console.log("this is front",process.env.FRONTEND_URL);
 
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/tasks", taskRouter);

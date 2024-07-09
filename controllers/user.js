@@ -17,7 +17,7 @@ export const login = async (req, res, next) => {
 
     if (!isMatch) return next(new ErrorHandler("Invalid id or Password", 400));
 
-    console.log(user.name);
+    console.log("this is user name",user.name);
     sendcookie(user, res, `Welcome back, ${user.name}`, 200);
   } catch (error) {
     next(error);
